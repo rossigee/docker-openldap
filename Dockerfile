@@ -1,4 +1,4 @@
-FROM ubuntu:wily
+FROM ubuntu:xenial
 MAINTAINER Ross Golder <ross@golder.org>
 
 # Set terminal to be noninteractive
