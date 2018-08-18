@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:bionic
 MAINTAINER Ross Golder <ross@golder.org>
 
 # Set terminal to be noninteractive
@@ -16,7 +16,7 @@ RUN apt-get update && \
 
 RUN mv /etc/ldap/slapd.d /etc/ldap/slapd.dist
 
-EXPOSE 636
+EXPOSE 389 636
 
 VOLUME ["/etc/ldap", "/var/lib/ldap"]
 
