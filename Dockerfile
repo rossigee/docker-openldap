@@ -16,7 +16,7 @@ RUN apt-get update && \
 
 RUN mv /etc/ldap/slapd.d /etc/ldap/slapd.dist
 
-EXPOSE 389 636
+EXPOSE 389
 
 VOLUME ["/etc/ldap", "/var/lib/ldap"]
 
@@ -24,4 +24,4 @@ COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
 
-CMD ["slapd", "-d", "0", "-h", "ldaps:///", "-u", "openldap", "-g", "openldap"]
+CMD ["slapd", "-d", "0", "-h", "ldap:///", "-u", "openldap", "-g", "openldap"]
