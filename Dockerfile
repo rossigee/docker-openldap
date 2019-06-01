@@ -1,4 +1,4 @@
-FROM ubuntu:bionic
+FROM ubuntu:disco
 MAINTAINER Ross Golder <ross@golder.org>
 
 # Set terminal to be noninteractive
