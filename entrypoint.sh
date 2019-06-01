@@ -6,6 +6,6 @@ ulimit -n 1024
 
 set -e
 
-chown -R openldap:openldap /etc/ldap /var/lib/ldap/ /var/run/slapd/
+chown -R openldap:openldap /var/lib/ldap
 
 exec "$@"
